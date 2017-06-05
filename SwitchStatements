@@ -1,0 +1,125 @@
+/*
+Switch statements are a way to have different outputs depending on the input for a variable. 
+IF/Else statements check to see if a value returns true, and a switch statement basically just checks your input and gives you an output.
+So, the following breaks down the pieces of a switch statement:
+--------------------
+<Variable> = <Value>
+
+switch(<Variable>)
+{
+case <input1>:
+	<action>;
+  break;
+case <inpu2>:
+	<action>;
+  break;
+Default:
+	<action>;
+  break;
+}
+-------------------
+The switch statement is going to look at the value of the variable in the parenthesis, then it will match it with a "case" to give you the output.
+If none of the cases match, then the statement will give you the default output.
+You can have as many cases as you want, but each one should end with a "break;" This will tell the statement to end after the action, rather than continuing to the acctions in the following case.
+The following code is examples we covered in class:
+*/
+
+
+class main()
+{
+	int selection = 1; //this is a global variable that can be accessed anywhere in the script
+
+
+	void story(selection)
+	{
+	switch (selection)
+		{
+		case 1:
+			print("Mary had a little lamb");
+			break;
+		case 2:
+			print("Jack and the beanstalk");
+			break;
+		default:
+			print("Out of luck, pal");
+			break;
+		}
+	}
+
+	void song(selection)
+	{
+	switch (selection)
+		{
+		case 1:
+			print("Mary had a little lamb");
+			break;
+		case 2:
+			print("Stairway to Heaven");
+			break;
+		default:
+			print("Game Over music");
+			break;
+		}
+	}
+}
+
+
+			string lightColor = "green";
+
+			if (llightColor == "green")
+			{
+				print("Go, the light is green");
+			}
+			else if (lightColor == "yellow")
+			{
+				print("The light is yellow, start to stop!");
+			}
+			else
+			{
+				print("The light is red. Stop!!!");
+			}
+
+//----------Switch Statement with integers---------------------------
+		public int jedi = 4;
+
+			switch(jedi)
+			{
+			case 1:
+				print("These are not the droids you're looking for");
+			  break;
+			case 2:
+				print("I have a bad feeling about this");
+			  break;
+			case 3:
+				print("Use the Force");
+			  break;
+			case 4:
+				print("May the force be with you!");
+			  break;
+			default:
+				print("Judgeme by my size...");
+			  break;
+			}
+//----------Switch Statement with strings----------------------------			
+			public int jedi2 = "Luke";
+
+			switch(jedi2)
+			{
+			case "Ben":
+				print("These are not the droids you're looking for");
+			  break;
+			case "Luke":
+				string story			
+			  break;
+			case "Obiwan":
+				print("Use the Force");
+			  break;
+			case "Anakin":
+				print("May the force be with you!");
+			  break;
+			default:
+				print("Judgeme by my size...");
+			  break;
+			}
+	}
+}
