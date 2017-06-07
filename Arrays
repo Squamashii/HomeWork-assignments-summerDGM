@@ -1,0 +1,30 @@
+//Arrays are a collection of variables of the same type. They come in different types like other variables: int, float, objects, GameObject, etc. 
+
+//They also get place holders, and the first spot is 0.. Not 1, so if your array has 5 place holders, you call them with 0,1,2,3, & 4.
+ 
+
+Array syntax: 
+VarType[] VarName = VarType{0,1,2,3,4};
+OR
+VarType[] VarName = new VarType[5]; //new is a keyword you use when you are creating a blank array
+VarName[0] = 0;
+VarName[1] = 1;
+VarName[2] = 2;
+VarName[3] = 3;
+VarName[4] = 4;
+
+//here is an example. GameObject is the decalred variable type, which means that only game objects can fit in this array.
+//Enemies is the name we gave the array
+GameObject[] Enemies = GameObject{spider, slime, snake, croc, mimic};
+Random.range [0,4]; //random.Range: generates a random # from the array in the parameters you set
+
+//To use a piece of date from an array, you have to call the position in the array. Enemies[2] is the variable name that calls the snake.
+Enemies[4] = Troll; //Will replace the mimic with a troll
+ 
+//public int[] intName = {<entries>}; //This public array is accessible in Unity, and you can edit its size, and the inputs on the Unity component editor window. 
+
+public int[] arrayTest1 = {001, 101, 201, 301, 401, 501, 601, 701, 801, 901};
+
+public GameObject[] arrayTest2 = new GameObject[2];
+
+//these last 2 arrays are editable in Unity. 
