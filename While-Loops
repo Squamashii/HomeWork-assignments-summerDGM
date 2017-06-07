@@ -1,0 +1,56 @@
+//While Loops: Tests the parameters before activating the action in the body. Meaning that the program will look at what it says in the parenthesis, and as long as the variables all check out, it will run the loop function.. then keep repeating until the paramenters come back wrong.
+int <intName> = <value>;
+void Start ()
+{
+	while (<conditional parameters>) //will keep repeating as long as it is true
+	{
+		<Action>;
+	}
+}
+------------------
+int rabbits = 2;
+void Start ()
+{
+	while (rabbits < 20) //first it will check to see if the current value of rabbits is less than 20.  
+	{
+		rabbits += 2; //if there are less than 20 rabbits, it will add 2, and then repeat.
+	}
+}
+------------------
+int healthMeter = 100;
+bool poisonDart = true;
+
+void Start ()
+{
+  while(poisonDart == true && healthMeter > 1) //when the character gets hit with a dart, the health will keep going down until they have 1% of their health left
+    {
+      healthMeter--; //this will drop the health by 1 every time the loop plays.
+    }
+}
+------------------  
+Do While: Always runs at least once and tests the parameters at the end of the body of the function
+bool <boolName> = false;
+void Start ()
+{
+do
+{
+		<action>;
+}while(boolName == true); //notice the semicolon, and that this part of the loop is outside the code box!
+}
+//The loop starts with the "do" keyword, and runs through the actions. It then hits the "while" keyword and checks the parameters. If it is true, it runs the loop again.
+//in the above example, it would run the loop, then check and see that the bool is actually false, and would not run again.
+
+//With this example I am raising their blood poison level by 12 until they get saturated. this will run and give him 12 more on the
+//blood poison without checking forst to see if he is dead (100). So, I might use this as an initial blow. When the character gets hit by the arrow, he gets an automatic 12 added to blood poison, and then it keeps checking his levels and adding more poison
+int bloodPoisonLevel = 14
+void Start ()
+{
+  do
+    {
+      bloodPoisonLevel += 12;
+    }while(bloodPoisonLevel <= 100);
+}
+
+
+
+
