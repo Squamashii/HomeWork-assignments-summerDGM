@@ -1,0 +1,48 @@
+//ForEach loops repeat the loop for every item in a collection or list. So, for example, if you have ten items on a list, it will complete the action one time for each item.
+//Here is the basic syntax
+
+foreach (var item in collection)
+		{
+			<action>;
+		}
+
+foreach: This is the loop type
+var: This is a placeholder for the variable type of the collection you will be working with. If it is a list of strings, then you would replace var with string
+item: This is a keyword that means the actual item on the list.
+in: This literally means it will be looking IN the specified collection.
+collection: This is replaced by the name of the list
+
+List<string> animalList = new List<string>();
+animalList.Add("frog");
+animalList.Add("bat");
+animalList.Add("llama");
+
+void Start ()
+{
+foreach (string item in animalList)
+	  {
+			print(item);
+		}
+    print("There are " + animalList.Count + " animals in the game");
+}
+
+//This loop will print the name of each of the 3 items in the animalList list, and then state how many animals there are. 
+//notice the 2nd print action is after the curly brackets that close the loop. If they were inside the curly brackets, then it would state the number fter every name.
+
+//So, lets do another one:
+
+List<int> doubleStuff = new List<int>();
+doubleStuff.Add(5);
+doubleStuff.Add(7);
+doubleStuff.Add(13);
+doubleStuff.Add(2);
+
+void Start ()
+{
+foreach (int item in doubleStuff)
+	  {
+			print(item*2);
+		}
+}
+
+//In this loop, it will find every item integer item in the doubleStuff list and print the value*2.
