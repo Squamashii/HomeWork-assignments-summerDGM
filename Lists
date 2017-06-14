@@ -1,0 +1,33 @@
+//A list is basically a dynamic array. A collection of items that is editable in the game engine during game play, and anywhere inside C#. Arrays are not editable after you declare them, unless you make them public. But Lists are editable everywhere.
+//In order to use a list, you must first declare at the beggining of your script that you want to use the generic collections system:
+
+using System.Collections.Generic;
+
+//here is a basic list syntax
+
+public List<Class> listName = new List<Class>();
+listName.Add(NewItem);
+
+//We are declaring that the list is public, so we can edit it in Unity.
+//Next you declare the data type/class in <T> brackets.
+//Class is the collection that the list is going to allow into the spots. So, this could be int, string, or a class that you created. 
+//You can only add items of that type or class into the list. Here are soe examples:
+
+public List<int> myIntegers = new List<int>();
+
+public List<GameObject> myObjects = new List<GameObject>();
+
+public List<string> myStrings = new List<string>();
+
+//To get the number of items in your list, you can use the command: listName.Count
+//To populate items on the list, use the listName.Add(new item); command
+
+public List<string> animals = new List<string>();
+animals.Add("Gecko");   //Spot 0
+animals.Add("Quail");   //Spot 1
+animals.Add("Beaver");  //Spot 2.. etc
+animals.Add("Raven");
+animals.Add("Lynx");
+
+//You can replace items in a list my calling the index number. Remember counting starts at 0
+animals[2] = ("Shark");   //This will replace Beaver with a Shark. Beaver is in the 2 spot.
