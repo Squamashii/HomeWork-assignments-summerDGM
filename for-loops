@@ -1,0 +1,39 @@
+/* A loop is a segment of code that repeats until the parameters come back false. 
+For loops have 3 sections in the parameters, separated by semicolons. (1;2;3)
+Section 1 is optional, and is where you an declare a temporary variable to call during the loop
+Section 2 is the conditional parameter that the loop will be chacking each time to see if it is true or false.
+Section 3 is an optional spot for incrementing or decrementing the value. This makes for loops ideal for counting.
+
+Here is the set-up/syntax:
+
+int <intName> = <value>; 
+void Start ()
+{
+  for(<newVar>; <conditional parameter >; <incremetal>)
+   {
+     <action>
+   }
+}
+-------------------------------------------------------------
+int jellyBeans = 100;
+void Start () 
+{
+  for(int i = 1;i > jellyBeans; i--) //in this case, I created a temporary variable called "i" to act as a temporary variable to compare jellyBeans to.
+  {
+    print("You ate a Jelly Bean, and now you only have " + jellyBeans + " left");
+  }
+}
+-------------------------------------------------------------
+In this example, the loop will repeat as many times as it has to until the conditional parameter comes back negative. I really don't know what else to say about these, haha. THey are pretty straight forward.
+---
+int dimmerSwitch = 10; 
+void Start ()
+{
+  for(int dim = 0; dim < dimmerSwitch; dim++)
+  {
+  print("The boogie man is on a rampage!");  
+  } print("The light is too strong, the boogie man turned to stone!");
+}
+//so, this loop will repeat until dim is equal to dimmerSwitch which is currently equal to 10. Every time it plays, dim will go up by 1.
+
+*/
