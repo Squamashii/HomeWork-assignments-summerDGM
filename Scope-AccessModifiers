@@ -1,0 +1,52 @@
+/*
+
+  Access Modifiers:
+  
+	Public: 
+    1. Will show up in the inspector in Unity. If you make changes in Unity, it doesn’t change the code. 
+  This is great for testing purposes.. You just need to remember to go back and change the script (Make a hard change) 
+  when you get to a point where you want to keep it that way. 
+    2. Will show up and interact with other scripts.
+	
+  Private: Will only be accessible in the current script. The default access modifier is always set to private. 
+  One example of a time you would want to set things to private is when you are the programmer, and you have scripts that you don't want 
+  the world builders to be able to mess up on accident (or on purpose).
+ 
+  Scope: 
+  
+  How much the code covers. The scope of the main class would be anything in the main curly brackets.
+  Code blocks generally determine the scope.
+  
+  ----------------------------------------EXAMPLES---------------------------------------
+  public class ScopeAccess : MonoBehaviour { //<---Scope of the class includes everything in this curly bracket code block
+
+public int coins = 0;
+
+void Attack(){                      //Scope of the Attack function is the SwordAttack function and the AxeAttack function
+
+	void SwordAttack(){               //Scope of the SwordAttack is the if/else statements
+
+		if(SwordAttack > EnemyDefense){ //Scope of the if statement 
+			EnemyHealth.AddDamage();      //
+		}                               //if statement goes down to here
+		else{
+			EndTurn();
+		}
+	}
+
+	void AxeAttack(){
+		
+		if(AxeAttack > EnemyDefense){   //Scope of the AxeAttack is the if/else statements
+			EnemyHealth.AddDamage();
+		}
+		else{
+			EndTurn();
+		}
+
+	}
+}
+
+}
+  
+----------------------------------------------------------------------------------------------  
+  */
