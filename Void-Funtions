@@ -1,0 +1,43 @@
+/*
+Functions are a block of code that fulfills an order. They do things. Otherwise it is just code. Functions are the machines within the code that get it to do things.
+
+Void functions are used whenever you don't need a value returned. They simply obey your command.
+For example, say you have a character that shoots arrows. You would use a function that carries out the shoot action every time you click the trigger button.
+
+basic syntax of a funtion:
+
+void FunctionName(arguments){
+  <Actions>
+}
+//Then later you can call the function with inputs in the argument fields, and it will carry it out.
+
+
+void Toaster(int slot1, int slot2){ //between”()” is called the argument. These 2 slots are temporary variables
+		if(slot1 == 1 || slot2 == 1){ //Here we are checking to see if the two variables meet certain parameters, if so, we carry out the action of the if statement
+			print("Bread is toasted!");
+		}
+		else if(slot1 == 1 && slot2 == 1){
+			print("Both slices are toasted!");
+		}
+		else{
+			print("Something went wrong!");
+		}
+	}
+	
+  Toaster(1,0); //This is where the variables are used.. when you call the function down here, (1,0) is in plaace of (slot1, slot2).
+  
+  public int num1;  //These are public variables that we can change, and then the funtion will add them together.
+	public int num2;
+
+	void Start(){
+		int num = AddNumbers(num1,num2);
+		print (num);
+	}
+
+	public int AddNumbers(int number1, int number2){ //Upper case name (AddNumbers) makes it a function
+		int result = number1 + number2;
+		return result; //This is a function where we want a returned value, so it is not a void function
+	}
+	
+
+*/
