@@ -1,0 +1,42 @@
+A function is a segment of the code that performs an action based on the information you give it. 
+The syntax for a function using parameters is exactly the same as the last functions we did, except you put values and declare the variable types in the argument.
+Here is the basic break down of the syntax:
+
+Public void FunctionName(arg1VarType arg1VarName, arg2VarType arg2VarName, etc){
+  <actions>;
+  }
+
+So lets say that we want to make a roller coaster function based on how many seats are filled on each row.
+Lets make a variable for each of the 6 rows of 4 people.
+Here is my roller coaster function skeleton:
+
+  Public void RollerCoaster(int Row1, int Row2, int Row3, int Row4, int Row5, int Row6){
+    //Based on how many people there are, we could have the roller coaster do different things here..
+    }
+
+To call our roller coaster, it would look something like the following:
+
+  RollerCoaster(2, 4, 2, 3, 4, 4);
+
+
+In the toaster example, we have a function
+that uses parameters (slot1 and slot2). These 2 parameters are of the type INT, and therefore, later on when we call the function, 
+all we need to do is fill in those two spots in the argument field with integers. Then the function will perform actions based on those 2 inputs.
+You can have as many parameters as you want, but theymust all be of the same type.
+In this example, the function is called "Toaster" and when we call the function, we would say "Toaster(Slot1, Slot2);" OR Toaster(5,7);
+
+ 
+ 
+ void Toaster(int slot1, int slot2){
+        if(slot1 == 1 || slot2 == 1){
+            print("Bread is toasted!");
+        }
+        else if(slot1 == 1 && slot2 == 1){
+            print("Both slices are toasted!");
+        }
+        else{
+            print("Something went wrong!");
+        }
+    }
+    Toaster(1,0);
+}
