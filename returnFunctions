@@ -1,0 +1,25 @@
+/* 
+Functions with returns.
+First off, a function is a bit of code that performs tasks. It does something. So, if you want a function to give you a specific value
+of a specific variable type, you don't want it to be a void function. It would be a function of the type of variable that you want back.
+The following is the basic syntax of a return function
+*/
+
+varType FunctionName(arguments){
+  code;
+  return variable; //The function lets you actually return this value
+  }
+  
+  // So to break this down and make it make more sense
+  
+  int MathMultiply(int x, int y){  //notice the function name is capitalized, and we have 2 slots in the argument
+    int result; //this is a local variable that we are going to return from this function
+    result = x*y;
+    return result;
+  }
+  
+  //Now at any point, we can call the function, and it will return the result.. like this:
+  
+  MathMultiply(3,5); //returns 15
+  
+  //You can return any variable type, like a int, float, string, etc. That's pretty much all you need to know with this one.
